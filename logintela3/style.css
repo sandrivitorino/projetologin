@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.mainlogin{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(19, 18, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.esquerda > h1{
+    color: #33C6B9;
+    font-size: 3vw;
+}
+
+.img{
+    width: 35vw;
+}
+
+.direita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardlogin{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(19, 18, 18);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px black;
+}
+
+.cardlogin > h1 {
+    color: #33C6B9;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(26, 25, 25);
+    color: rgb(247, 234, 234);
+    font-size: 13px;
+    box-shadow: 0px 10px 40px black;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.textfield > label{
+    color: #35b8ab;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: white;
+}
+
+.btnlogin{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: black;
+    background: #33C6B9;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #35b8ab91;
+
+}
+
+.rodape{
+    color: #f0ffff94;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+.rodape > a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #f0ffffde;
+}
+.rodape > a:hover{
+    color: #31c9bac0;
+    transition: 1s;
+}
+
+@media only screen and (max-width: 950px){
+    .cardlogin{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .mainlogin{
+        flex-direction: column;
+
+    }
+    .esquerda > h1{
+        display: none;
+    }
+    .esquerda{
+        width: 100%;
+        height: auto;
+    }
+    .direita{
+        width: 100%;
+        height: auto;
+    }
+    .img{
+        width: 50vw;
+    }
+    .cardlogin{
+        width: 90%;
+    }
+
+}
